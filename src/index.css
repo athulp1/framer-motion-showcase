@@ -1,0 +1,50 @@
+/* src/index.css
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+ */
+
+
+
+
+
+
+/* src/index.css */
+
+/* --- CRITICAL FIX: @import must be at the very top --- */
+/* Import Google Font - Inter */
+/* This line fetches the 'Inter' font from Google Fonts, making it available for your project. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Tailwind CSS directives: These are crucial for Tailwind to inject its styles. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply Inter font globally to the body element. */
+/* This ensures all text in your application uses the 'Inter' font by default. */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Optional: Smooth scrolling for a better single-page application experience. */
+/* When you click a link that scrolls to a section, it will animate smoothly. */
+html {
+  scroll-behavior: smooth;
+}
